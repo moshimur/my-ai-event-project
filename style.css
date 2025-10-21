@@ -326,6 +326,77 @@ strong {
 }
 
 /* ===================================
+   アコーディオン
+   =================================== */
+
+.accordion {
+    margin-top: 45px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+}
+
+.accordion:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+.accordion-header {
+    cursor: pointer;
+    user-select: none;
+    margin: 0;
+    padding: 20px 25px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+    color: white;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.accordion-header:hover {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
+    padding-left: 30px;
+    border-left-color: var(--primary-color);
+}
+
+.accordion-header::after {
+    content: '▼';
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    font-size: 0.8em;
+    transition: transform 0.3s ease;
+}
+
+.accordion.active .accordion-header::after {
+    transform: translateY(-50%) rotate(0deg);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    background: var(--bg-primary);
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    padding: 0 25px;
+}
+
+.accordion.active .accordion-content {
+    max-height: 2000px;
+    padding: 25px;
+}
+
+.accordion-content > *:first-child {
+    margin-top: 0;
+}
+
+.accordion-content > *:last-child {
+    margin-bottom: 0;
+}
+
+/* ===================================
    追加のインタラクション効果
    =================================== */
 
