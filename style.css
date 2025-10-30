@@ -180,7 +180,7 @@ strong {
    =================================== */
 
 .intro {
-    font-size: 1.15em;
+    font-size: 0.95em;
     color: #c8e6c9;
     background: linear-gradient(135deg, #0a2f23 0%, #154536 100%);
     padding: 25px;
@@ -277,7 +277,7 @@ strong {
 
     .intro {
         padding: 20px;
-        font-size: 1.05em;
+        font-size: 0.9em;
     }
 
     .step {
