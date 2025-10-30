@@ -9,18 +9,18 @@
 }
 
 :root {
-    /* カラーパレット - 緑基調 */
-    --primary-color: #10b981;
-    --primary-dark: #059669;
-    --primary-light: #34d399;
-    --secondary-color: #14b8a6;
-    --accent-color: #22c55e;
+    /* カラーパレット */
+    --primary-color: #2563eb;
+    --primary-dark: #1e40af;
+    --primary-light: #3b82f6;
+    --secondary-color: #8b5cf6;
+    --accent-color: #06b6d4;
     --text-primary: #1f2937;
     --text-secondary: #4b5563;
     --text-light: #6b7280;
     --bg-primary: #ffffff;
     --bg-secondary: #f9fafb;
-    --bg-accent: #f0fdf4;
+    --bg-accent: #f0f9ff;
     --border-color: #e5e7eb;
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
@@ -40,7 +40,7 @@ body {
     font-family: var(--font-body);
     line-height: 1.75;
     color: var(--text-primary);
-    background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     background-attachment: fixed;
     padding: 40px 20px;
     min-height: 100vh;
@@ -179,7 +179,7 @@ strong {
 .intro {
     font-size: 1.15em;
     color: var(--text-secondary);
-    background: linear-gradient(135deg, var(--bg-accent) 0%, #f0fdf4 100%);
+    background: linear-gradient(135deg, var(--bg-accent) 0%, #f0f9ff 100%);
     padding: 25px;
     border-radius: 12px;
     margin-bottom: 35px;
@@ -196,7 +196,7 @@ strong {
     right: 0;
     width: 100px;
     height: 100px;
-    background: radial-gradient(circle, rgba(16, 185, 129, 0.1) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.1) 0%, transparent 70%);
     border-radius: 50%;
 }
 
@@ -322,7 +322,7 @@ strong {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, var(--primary-dark), var(--primary-color));
+    background: linear-gradient(180deg, var(--primary-dark), var(--secondary-color));
 }
 
 /* ===================================
@@ -428,7 +428,7 @@ a:hover {
 .search-section {
     margin: 35px 0 50px;
     padding: 30px;
-    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
     border-radius: 16px;
     border: 2px solid var(--accent-color);
     box-shadow: var(--shadow-md);
@@ -470,7 +470,7 @@ a:hover {
 .search-input:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 
 .search-input::placeholder {
@@ -607,7 +607,7 @@ a:hover {
 .result-content strong {
     color: var(--primary-color);
     font-weight: 600;
-    background: linear-gradient(transparent 60%, rgba(16, 185, 129, 0.15) 60%);
+    background: linear-gradient(transparent 60%, rgba(37, 99, 235, 0.15) 60%);
     padding: 2px 0;
 }
 
