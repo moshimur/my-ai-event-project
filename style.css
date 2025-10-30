@@ -18,18 +18,14 @@
     --text-primary: #1f2937;
     --text-secondary: #4b5563;
     --text-light: #6b7280;
-    --text-green: #10b981;
-    --text-green-bright: #22c55e;
     --bg-primary: #ffffff;
     --bg-secondary: #f9fafb;
     --bg-accent: #f0f9ff;
     --border-color: #e5e7eb;
-    --border-green: #10b981;
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-    --shadow-green: 0 10px 30px rgba(16, 185, 129, 0.3);
 
     /* タイポグラフィ */
     --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
@@ -44,7 +40,7 @@ body {
     font-family: var(--font-body);
     line-height: 1.75;
     color: var(--text-primary);
-    background: linear-gradient(135deg, #0a0a0a 0%, #000000 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     background-attachment: fixed;
     padding: 40px 20px;
     min-height: 100vh;
@@ -56,8 +52,7 @@ body {
     background-color: var(--bg-primary);
     padding: 50px;
     border-radius: 16px;
-    box-shadow: var(--shadow-xl), var(--shadow-green);
-    border: 1px solid rgba(16, 185, 129, 0.2);
+    box-shadow: var(--shadow-xl);
     animation: fadeInUp 0.6s ease-out;
 }
 
@@ -98,7 +93,6 @@ h1::after {
     height: 4px;
     background: linear-gradient(90deg, var(--accent-color), var(--primary-light));
     border-radius: 2px;
-    box-shadow: 0 0 10px rgba(34, 197, 94, 0.5);
 }
 
 h2 {
@@ -342,11 +336,10 @@ strong {
     overflow: hidden;
     box-shadow: var(--shadow-md);
     transition: all 0.3s ease;
-    border: 1px solid rgba(16, 185, 129, 0.1);
 }
 
 .accordion:hover {
-    box-shadow: var(--shadow-lg), 0 0 15px rgba(16, 185, 129, 0.2);
+    box-shadow: var(--shadow-lg);
 }
 
 .accordion-header {
@@ -366,7 +359,6 @@ strong {
     background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
     padding-left: 30px;
     border-left-color: var(--primary-color);
-    box-shadow: 0 0 15px rgba(16, 185, 129, 0.4);
 }
 
 .accordion-header::after {
@@ -417,7 +409,6 @@ a {
 a:hover {
     color: var(--accent-color);
     text-decoration: underline;
-    text-shadow: 0 0 8px rgba(34, 197, 94, 0.3);
 }
 
 ::selection {
@@ -440,7 +431,7 @@ a:hover {
     background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
     border-radius: 16px;
     border: 2px solid var(--accent-color);
-    box-shadow: var(--shadow-md), 0 0 20px rgba(34, 197, 94, 0.2);
+    box-shadow: var(--shadow-md);
 }
 
 .search-section h2 {
@@ -503,7 +494,7 @@ a:hover {
 .search-button:hover {
     background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
     transform: translateY(-2px);
-    box-shadow: var(--shadow-md), 0 0 20px rgba(16, 185, 129, 0.5);
+    box-shadow: var(--shadow-md);
 }
 
 .search-button:active {
@@ -570,7 +561,7 @@ a:hover {
     border-radius: 12px;
     padding: 30px;
     box-shadow: var(--shadow-md);
-    border: 2px solid rgba(16, 185, 129, 0.3);
+    border: 1px solid var(--border-color);
 }
 
 .result-header h3 {
@@ -641,7 +632,7 @@ a:hover {
 .wiki-link:hover {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
     transform: translateY(-2px);
-    box-shadow: var(--shadow-md), 0 0 20px rgba(34, 197, 94, 0.6);
+    box-shadow: var(--shadow-md);
     text-decoration: none;
 }
 
