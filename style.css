@@ -15,21 +15,17 @@
     --primary-light: #34d399;
     --secondary-color: #14b8a6;
     --accent-color: #6EE7B7;
-    --text-primary: #1f2937;
-    --text-secondary: #4b5563;
-    --text-light: #6b7280;
-    --text-green: #10b981;
-    --text-green-bright: #22c55e;
-    --bg-primary: #ffffff;
-    --bg-secondary: #f9fafb;
-    --bg-accent: #f0fdf4;
-    --border-color: #e5e7eb;
-    --border-green: #10b981;
+    --text-primary: #1f2937; /* 元のまま */
+    --text-secondary: #4b5563; /* 元のまま */
+    --text-light: #6b7280; /* 元のまま */
+    --bg-primary: #ffffff; /* 元のまま (白) */
+    --bg-secondary: #f9fafb; /* 元のまま (薄いグレー) */
+    --bg-accent: #F0FDF4; /* 薄い緑に変更 */
+    --border-color: #e5e7eb; /* 元のまま */
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-    --shadow-green: 0 10px 30px rgba(16, 185, 129, 0.3);
 
     /* タイポグラフィ */
     --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
@@ -43,8 +39,8 @@
 body {
     font-family: var(--font-body);
     line-height: 1.75;
-    color: var(--text-primary);
-    background: linear-gradient(135deg, #1a1a1a 0%, #4a4a4a 100%);
+    color: #e8f5e9; /* テキストを明るい緑に */
+    background: linear-gradient(135deg, #0a0a0a 0%, #000000 100%); /* 黒のグラデーション背景 */
     background-attachment: fixed;
     padding: 40px 20px;
     min-height: 100vh;
@@ -53,13 +49,14 @@ body {
 .container {
     max-width: 850px;
     margin: 0 auto;
-    background: linear-gradient(135deg, #0d3b2e 0%, #1a5a3f 100%);
+    background: linear-gradient(135deg, #0d3b2e 0%, #1a5a3f 100%); /* 濃い緑のコンテナ背景 */
     padding: 50px;
     border-radius: 16px;
-    box-shadow: var(--shadow-xl), 0 0 30px rgba(16, 185, 129, 0.3);
-    border: 3px solid #2d7a5f;
+    box-shadow: var(--shadow-xl), 0 0 30px rgba(16, 185, 129, 0.3); /* 緑の影 */
+    border: 3px solid #2d7a5f; /* 緑の境界線 */
     animation: fadeInUp 0.6s ease-out;
 }
+
 
 @keyframes fadeInUp {
     from {
@@ -99,7 +96,6 @@ h1::after {
     height: 4px;
     background: linear-gradient(90deg, var(--accent-color), var(--primary-light));
     border-radius: 2px;
-    box-shadow: 0 0 10px rgba(34, 197, 94, 0.5);
 }
 
 h2 {
@@ -204,7 +200,7 @@ strong {
     right: 0;
     width: 100px;
     height: 100px;
-    background: radial-gradient(circle, rgba(16, 185, 129, 0.1) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(74, 222, 128, 0.1) 0%, transparent 70%); /* 緑の光に変更 */
     border-radius: 50%;
 }
 
@@ -344,11 +340,10 @@ strong {
     overflow: hidden;
     box-shadow: var(--shadow-md);
     transition: all 0.3s ease;
-    border: 1px solid rgba(16, 185, 129, 0.1);
 }
 
 .accordion:hover {
-    box-shadow: var(--shadow-lg), 0 0 15px rgba(16, 185, 129, 0.2);
+    box-shadow: var(--shadow-lg);
 }
 
 .accordion-header {
@@ -542,7 +537,7 @@ a:hover {
 }
 
 .error {
-    background: #fee;
+    background: #fee; /* エラーは目立つようにそのまま */
     border: 2px solid #fcc;
     border-radius: 12px;
     padding: 25px;
@@ -635,7 +630,7 @@ a:hover {
 .wiki-link {
     display: inline-block;
     padding: 12px 24px;
-    background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+    background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%); /* Wikipediaっぽく青系に */
     color: #e8f5e9;
     text-decoration: none;
     border-radius: 8px;
