@@ -15,6 +15,27 @@
             AI（人工知能）に関する基本的な用語をわかりやすく解説します。各項目をクリックすると詳細が表示されます。
         </div>
 
+        <!-- 検索セクション -->
+        <div class="search-section">
+            <h2>AI用語を検索</h2>
+            <p class="search-description">知りたいAI用語を入力してください。Wikipediaから情報を取得して、初心者向けにわかりやすく解説します。</p>
+            <form id="search-form" class="search-form">
+                <input
+                    type="text"
+                    id="search-input"
+                    class="search-input"
+                    placeholder="例：ニューラルネットワーク、強化学習、GAN..."
+                    autocomplete="off"
+                    required
+                />
+                <button type="submit" class="search-button">検索</button>
+            </form>
+            <div id="search-result" class="search-result"></div>
+        </div>
+
+        <!-- よく検索される用語集 -->
+        <h2 class="dictionary-title">よく検索されるAI用語</h2>
+
         <!-- AI（人工知能） -->
         <div class="accordion">
             <h2 class="accordion-header">AI（人工知能）</h2>
