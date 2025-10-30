@@ -3,93 +3,389 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI用語解説：RAG (Retrieval-Augmented Generation)</title>
+    <title>初心者のためのAI用語辞書</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
-        <h1>AI用語解説：RAG (Retrieval-Augmented Generation) とは？</h1>
+        <h1>初心者のためのAI用語辞書</h1>
 
         <div class="intro">
-            RAG（ラグ）は、AIがより正確で信頼できる回答を生成するための技術です。「検索強化生成」とも呼ばれ、AIが答える前に関連する情報を探し出して、それを参考にしながら回答を作る仕組みです。
+            AI（人工知能）に関する基本的な用語をわかりやすく解説します。各項目をクリックすると詳細が表示されます。
         </div>
 
-        <h2>RAGはなぜ必要なの？</h2>
-        <p>通常のAIは、学習した時点までの知識しか持っていません。そのため、以下のような問題があります：</p>
-        <ul>
-            <li><strong>古い情報しか知らない</strong>：最新のニュースや出来事については答えられません</li>
-            <li><strong>専門的な知識が不足</strong>：会社独自の資料や専門分野の詳細情報は学習していません</li>
-            <li><strong>事実と異なることを言ってしまう</strong>：知らないことでも、もっともらしい嘘を作ってしまうことがあります</li>
-        </ul>
-        <p>RAGを使うことで、AIが「わからないことは調べてから答える」ようになり、これらの問題を解決できます。</p>
-
+        <!-- AI（人工知能） -->
         <div class="accordion">
-            <h2 class="accordion-header">RAGの簡単な仕組み</h2>
+            <h2 class="accordion-header">AI（人工知能）</h2>
             <div class="accordion-content">
-                <p>RAGは、私たちが調べ物をする時の流れと似ています：</p>
-
-                <div class="step">
-                    <strong>1. 質問を受け取る</strong>
-                    <ul>
-                        <li>例：「今月の売上報告書に書かれている重要なポイントは？」</li>
-                    </ul>
-                </div>
-
-                <div class="step">
-                    <strong>2. 関連する情報を探す（Retrieval = 検索）</strong>
-                    <ul>
-                        <li>データベースや文書の中から、質問に関係する部分を見つけます</li>
-                        <li>例：売上報告書のファイルから該当する箇所を抽出</li>
-                    </ul>
-                </div>
-
-                <div class="step">
-                    <strong>3. 見つけた情報を元に回答を作る（Generation = 生成）</strong>
-                    <ul>
-                        <li>検索で見つけた情報を参考にしながら、AIが回答を作ります</li>
-                        <li>例：「今月の売上は前月比15%増加し、特にオンライン販売が好調でした」</li>
-                    </ul>
-                </div>
-
-                <p>このように、RAGは「検索」と「生成」を組み合わせた技術です。</p>
+                <p><strong>AI（Artificial Intelligence）</strong>は、人間の知能を模倣したコンピュータシステムのことです。</p>
+                <h3>主な特徴</h3>
+                <ul>
+                    <li>学習能力：データから自動的にパターンを学習</li>
+                    <li>推論能力：学習した知識を使って判断や予測</li>
+                    <li>自動化：人間が行っていた作業を自動で実行</li>
+                </ul>
+                <h3>身近な例</h3>
+                <ul>
+                    <li>スマートフォンの音声アシスタント（Siri、Google アシスタント）</li>
+                    <li>おすすめ商品の表示（Amazon、Netflix）</li>
+                    <li>自動翻訳（Google 翻訳、DeepL）</li>
+                </ul>
             </div>
         </div>
 
+        <!-- 機械学習 -->
         <div class="accordion">
-            <h2 class="accordion-header">RAGを使うメリット</h2>
+            <h2 class="accordion-header">機械学習（Machine Learning）</h2>
             <div class="accordion-content">
-                <p>RAGを活用することで、以下のようなメリットが得られます：</p>
-
-                <h3>1. 正確性が向上する</h3>
+                <p><strong>機械学習</strong>は、コンピュータがデータから自動的に学習し、改善していく技術です。</p>
+                <h3>仕組み</h3>
                 <ul>
-                    <li>実際の資料やデータに基づいて回答するため、事実に基づいた正確な情報を提供できます</li>
+                    <li>大量のデータを読み込む</li>
+                    <li>データの中からパターンや規則性を見つける</li>
+                    <li>見つけたパターンを使って予測や分類を行う</li>
                 </ul>
-
-                <h3>2. 最新情報に対応できる</h3>
+                <h3>活用例</h3>
                 <ul>
-                    <li>データベースを更新すれば、AIを再学習させなくても最新の情報で回答できます</li>
+                    <li>迷惑メールの自動判定</li>
+                    <li>手書き文字の認識</li>
+                    <li>株価の予測</li>
+                    <li>病気の診断支援</li>
                 </ul>
+            </div>
+        </div>
 
-                <h3>3. 専門知識を活用できる</h3>
+        <!-- ディープラーニング -->
+        <div class="accordion">
+            <h2 class="accordion-header">ディープラーニング（Deep Learning）</h2>
+            <div class="accordion-content">
+                <p><strong>ディープラーニング</strong>は、人間の脳の神経回路を模倣した「ニューラルネットワーク」を使った機械学習の手法です。</p>
+                <h3>特徴</h3>
                 <ul>
-                    <li>会社の社内文書、技術マニュアル、研究論文など、特定の分野の知識を使えます</li>
+                    <li>多層のネットワーク構造で複雑なパターンを学習</li>
+                    <li>画像、音声、テキストなど様々なデータを扱える</li>
+                    <li>大量のデータがあればあるほど性能が向上</li>
                 </ul>
-
-                <h3>4. 回答の根拠が明確</h3>
+                <h3>できること</h3>
                 <ul>
-                    <li>どの資料を参考にしたか示せるため、回答の信頼性を確認できます</li>
+                    <li>画像認識（顔認証、物体検出）</li>
+                    <li>音声認識と音声合成</li>
+                    <li>自然言語処理（文章の理解と生成）</li>
+                    <li>自動運転の判断システム</li>
                 </ul>
+            </div>
+        </div>
 
-                <h3>5. コストを抑えられる</h3>
+        <!-- LLM -->
+        <div class="accordion">
+            <h2 class="accordion-header">LLM（大規模言語モデル）</h2>
+            <div class="accordion-content">
+                <p><strong>LLM（Large Language Model）</strong>は、膨大な量のテキストデータで学習された、言葉を理解し生成するAIモデルです。</p>
+                <h3>特徴</h3>
                 <ul>
-                    <li>AIモデル全体を再学習するよりも、必要な情報を追加・更新する方が効率的です</li>
+                    <li>数千億〜数兆個のパラメータを持つ巨大なモデル</li>
+                    <li>文章の意味を理解し、自然な文章を生成</li>
+                    <li>翻訳、要約、質問応答など多様なタスクに対応</li>
+                </ul>
+                <h3>代表的なLLM</h3>
+                <ul>
+                    <li>GPT（OpenAI）：ChatGPTなどに使用</li>
+                    <li>Claude（Anthropic）：会話型AI</li>
+                    <li>Gemini（Google）：マルチモーダルAI</li>
+                    <li>Llama（Meta）：オープンソースモデル</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- プロンプト -->
+        <div class="accordion">
+            <h2 class="accordion-header">プロンプト（Prompt）</h2>
+            <div class="accordion-content">
+                <p><strong>プロンプト</strong>は、AIに対して指示や質問を与えるための入力文のことです。</p>
+                <h3>良いプロンプトの書き方</h3>
+                <ul>
+                    <li><strong>具体的に書く</strong>：「文章を書いて」より「500文字程度でブログ記事を書いて」</li>
+                    <li><strong>役割を指定</strong>：「プロの編集者として添削してください」</li>
+                    <li><strong>出力形式を指定</strong>：「箇条書きで」「表形式で」など</li>
+                    <li><strong>例を示す</strong>：期待する出力の例を含める</li>
+                </ul>
+                <h3>プロンプトエンジニアリング</h3>
+                <p>AIから最良の結果を引き出すためにプロンプトを工夫する技術です。適切なプロンプトを設計することで、AIの回答の質を大幅に向上させることができます。</p>
+            </div>
+        </div>
+
+        <!-- トークン -->
+        <div class="accordion">
+            <h2 class="accordion-header">トークン（Token）</h2>
+            <div class="accordion-content">
+                <p><strong>トークン</strong>は、AIが文章を処理する際の最小単位です。単語や文字の一部に分割されます。</p>
+                <h3>例</h3>
+                <ul>
+                    <li>日本語：「こんにちは」→ 約2〜3トークン</li>
+                    <li>英語：「Hello world」→ 約2トークン</li>
+                    <li>記号やスペースもトークンとして数えられる</li>
+                </ul>
+                <h3>なぜ重要？</h3>
+                <ul>
+                    <li><strong>コスト計算</strong>：多くのAIサービスはトークン数で料金が決まる</li>
+                    <li><strong>入力制限</strong>：モデルごとに処理できるトークン数の上限がある</li>
+                    <li><strong>応答速度</strong>：トークン数が多いほど処理に時間がかかる</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- RAG -->
+        <div class="accordion">
+            <h2 class="accordion-header">RAG（検索拡張生成）</h2>
+            <div class="accordion-content">
+                <p><strong>RAG（Retrieval-Augmented Generation）</strong>は、AIがより正確で信頼できる回答を生成するための技術です。</p>
+                <h3>仕組み</h3>
+                <div class="step">
+                    <strong>1. 質問を受け取る</strong>
+                    <ul>
+                        <li>例：「今月の売上報告書の要点は？」</li>
+                    </ul>
+                </div>
+                <div class="step">
+                    <strong>2. 関連情報を検索（Retrieval）</strong>
+                    <ul>
+                        <li>データベースや文書から関連する情報を探す</li>
+                    </ul>
+                </div>
+                <div class="step">
+                    <strong>3. 回答を生成（Generation）</strong>
+                    <ul>
+                        <li>見つけた情報を元にAIが回答を作成</li>
+                    </ul>
+                </div>
+                <h3>メリット</h3>
+                <ul>
+                    <li>最新情報に基づいた正確な回答</li>
+                    <li>専門的な知識を活用できる</li>
+                    <li>回答の根拠となる情報源を示せる</li>
+                    <li>AIの「ハルシネーション」を減らせる</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ファインチューニング -->
+        <div class="accordion">
+            <h2 class="accordion-header">ファインチューニング（Fine-tuning）</h2>
+            <div class="accordion-content">
+                <p><strong>ファインチューニング</strong>は、既存のAIモデルを特定の用途に合わせて追加学習させることです。</p>
+                <h3>なぜ使う？</h3>
+                <ul>
+                    <li>ゼロから学習するより時間とコストが節約できる</li>
+                    <li>特定の分野やタスクの性能を向上させられる</li>
+                    <li>独自のデータで専門性の高いAIを作れる</li>
+                </ul>
+                <h3>活用例</h3>
+                <ul>
+                    <li>医療分野の専門用語に特化した文章生成</li>
+                    <li>特定企業のカスタマーサポートBot</li>
+                    <li>法律文書の自動作成システム</li>
+                </ul>
+                <h3>手順</h3>
+                <ul>
+                    <li>1. ベースとなる学習済みモデルを選ぶ</li>
+                    <li>2. 目的に合ったデータセットを準備</li>
+                    <li>3. 追加学習を実施</li>
+                    <li>4. 性能を評価・調整</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- エンベディング -->
+        <div class="accordion">
+            <h2 class="accordion-header">エンベディング（Embedding）</h2>
+            <div class="accordion-content">
+                <p><strong>エンベディング</strong>は、単語や文章を数値のベクトル（数字の列）に変換する技術です。</p>
+                <h3>なぜ必要？</h3>
+                <ul>
+                    <li>コンピュータは文字をそのまま理解できない</li>
+                    <li>数値に変換することで計算や比較が可能になる</li>
+                    <li>意味的に似ている言葉は近い数値になる</li>
+                </ul>
+                <h3>例</h3>
+                <ul>
+                    <li>「犬」と「猫」のベクトルは近い（どちらもペット）</li>
+                    <li>「犬」と「自動車」のベクトルは遠い</li>
+                </ul>
+                <h3>用途</h3>
+                <ul>
+                    <li>文章の類似度計算（検索システム）</li>
+                    <li>推薦システム（類似商品の提案）</li>
+                    <li>機械翻訳</li>
+                    <li>RAGシステムでの情報検索</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Transformer -->
+        <div class="accordion">
+            <h2 class="accordion-header">Transformer（トランスフォーマー）</h2>
+            <div class="accordion-content">
+                <p><strong>Transformer</strong>は、現代の多くのAIモデルの基礎となっているディープラーニングの仕組みです。</p>
+                <h3>特徴</h3>
+                <ul>
+                    <li><strong>アテンション機構</strong>：文章の重要な部分に注目できる</li>
+                    <li><strong>並列処理</strong>：高速に学習・処理が可能</li>
+                    <li><strong>長い文脈を理解</strong>：離れた単語同士の関係も把握</li>
+                </ul>
+                <h3>Transformerを使ったモデル</h3>
+                <ul>
+                    <li><strong>GPT</strong>：「Generative Pre-trained Transformer」の略</li>
+                    <li><strong>BERT</strong>：検索エンジンなどで使用</li>
+                    <li><strong>T5</strong>：翻訳や要約に使用</li>
+                </ul>
+                <h3>影響</h3>
+                <p>2017年に発表されて以来、AI分野に革命をもたらし、ChatGPTをはじめとする多くの高性能AIの基盤技術となっています。</p>
+            </div>
+        </div>
+
+        <!-- ハルシネーション -->
+        <div class="accordion">
+            <h2 class="accordion-header">ハルシネーション（幻覚・Hallucination）</h2>
+            <div class="accordion-content">
+                <p><strong>ハルシネーション</strong>は、AIが事実でない情報をもっともらしく生成してしまう現象です。</p>
+                <h3>なぜ起こる？</h3>
+                <ul>
+                    <li>学習データに含まれていない情報を推測で補おうとする</li>
+                    <li>確率的に「それらしい」文章を生成する仕組み</li>
+                    <li>知らないことを「知らない」と答えにくい構造</li>
+                </ul>
+                <h3>具体例</h3>
+                <ul>
+                    <li>存在しない論文や書籍を引用する</li>
+                    <li>架空の統計データを提示する</li>
+                    <li>実際とは異なる歴史的事実を述べる</li>
+                </ul>
+                <h3>対策</h3>
+                <ul>
+                    <li><strong>RAGを使用</strong>：信頼できる情報源を参照させる</li>
+                    <li><strong>ファクトチェック</strong>：重要な情報は必ず確認する</li>
+                    <li><strong>複数の情報源で確認</strong>：クロスチェックを行う</li>
+                    <li><strong>プロンプトで指示</strong>：「不明な場合は不明と答えて」と指示</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Few-shot学習 -->
+        <div class="accordion">
+            <h2 class="accordion-header">Few-shot学習（フューショット学習）</h2>
+            <div class="accordion-content">
+                <p><strong>Few-shot学習</strong>は、少数の例を示すだけでAIにタスクを理解させる手法です。</p>
+                <h3>仕組み</h3>
+                <ul>
+                    <li>プロンプトの中に2〜10個程度の例を含める</li>
+                    <li>AIがパターンを理解して同様のタスクを実行</li>
+                    <li>再学習不要で新しいタスクに対応</li>
+                </ul>
+                <h3>例</h3>
+                <p>感情分析のFew-shot例：</p>
+                <div class="step">
+                    <strong>プロンプト</strong>
+                    <ul>
+                        <li>「このサービスは最高です！」→ ポジティブ</li>
+                        <li>「使いにくくて困っています」→ ネガティブ</li>
+                        <li>「配送が早くて助かりました」→ ?</li>
+                    </ul>
+                    <p>→ AIが「ポジティブ」と判断</p>
+                </div>
+                <h3>メリット</h3>
+                <ul>
+                    <li>モデルの再学習が不要</li>
+                    <li>少ないデータで新しいタスクに対応</li>
+                    <li>迅速にAIの動作を調整できる</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ゼロショット学習 -->
+        <div class="accordion">
+            <h2 class="accordion-header">ゼロショット学習（Zero-shot学習）</h2>
+            <div class="accordion-content">
+                <p><strong>ゼロショット学習</strong>は、例を示さずに、指示だけでAIにタスクを実行させる手法です。</p>
+                <h3>特徴</h3>
+                <ul>
+                    <li>例を一切示さない</li>
+                    <li>自然言語の指示だけでタスクを理解</li>
+                    <li>LLMの汎用性の高さを示す能力</li>
+                </ul>
+                <h3>例</h3>
+                <div class="step">
+                    <strong>プロンプト</strong>
+                    <p>「次のレビューが肯定的か否定的か判断してください：『商品の品質は良いですが、配送が遅かったです』」</p>
+                    <p>→ AIが例なしで「どちらとも言えない（Mixed）」と判断</p>
+                </div>
+                <h3>使い分け</h3>
+                <ul>
+                    <li><strong>ゼロショット</strong>：シンプルなタスク、一般的な質問</li>
+                    <li><strong>Few-shot</strong>：特定の形式や複雑なタスク</li>
+                    <li><strong>ファインチューニング</strong>：大量のデータで専門化</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 教師あり学習 -->
+        <div class="accordion">
+            <h2 class="accordion-header">教師あり学習（Supervised Learning）</h2>
+            <div class="accordion-content">
+                <p><strong>教師あり学習</strong>は、正解ラベル付きのデータを使ってAIを学習させる方法です。</p>
+                <h3>仕組み</h3>
+                <ul>
+                    <li>入力データと正解（ラベル）のペアを大量に用意</li>
+                    <li>AIがパターンを学習</li>
+                    <li>新しいデータに対して予測を行う</li>
+                </ul>
+                <h3>例</h3>
+                <div class="step">
+                    <strong>画像分類</strong>
+                    <ul>
+                        <li>入力：猫の画像 → 正解ラベル：「猫」</li>
+                        <li>入力：犬の画像 → 正解ラベル：「犬」</li>
+                        <li>これを数千〜数万枚で学習</li>
+                    </ul>
+                </div>
+                <h3>用途</h3>
+                <ul>
+                    <li>画像認識（顔認証、物体検出）</li>
+                    <li>スパムメール判定</li>
+                    <li>音声認識</li>
+                    <li>価格予測</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 教師なし学習 -->
+        <div class="accordion">
+            <h2 class="accordion-header">教師なし学習（Unsupervised Learning）</h2>
+            <div class="accordion-content">
+                <p><strong>教師なし学習</strong>は、正解ラベルなしでデータからパターンを見つける学習方法です。</p>
+                <h3>特徴</h3>
+                <ul>
+                    <li>正解が与えられていないデータを使用</li>
+                    <li>AIが自動的にデータの構造やパターンを発見</li>
+                    <li>隠れた特徴やグループを見つける</li>
+                </ul>
+                <h3>主な手法</h3>
+                <ul>
+                    <li><strong>クラスタリング</strong>：似たデータをグループ化</li>
+                    <li><strong>次元削減</strong>：複雑なデータを単純化</li>
+                    <li><strong>異常検知</strong>：通常と異なるパターンを発見</li>
+                </ul>
+                <h3>用途</h3>
+                <ul>
+                    <li>顧客セグメンテーション（購買パターン別にグループ化）</li>
+                    <li>レコメンデーション（似た商品の発見）</li>
+                    <li>不正検知（通常と異なる取引の検出）</li>
                 </ul>
             </div>
         </div>
 
         <div class="footer">
-            RAGは、AIをより実用的で信頼できるツールにするための重要な技術です。図書館で本を調べながらレポートを書くように、AIも必要な情報を探してから回答を作ることで、より価値のあるサポートを提供できるようになります。
+            このAI用語辞書は、初心者の方がAIの基本概念を理解するためのガイドです。AI技術は日々進化しているので、継続的に学習を続けることをお勧めします。
         </div>
     </div>
 </body>
