@@ -226,7 +226,7 @@ ul li::before {
 
 .intro {
     border-left: 4px solid var(--primary-green);
-    font-size: 1.1em;
+    font-size: 0.95em;
     color: var(--text-secondary);
     position: relative;
     z-index: 1;
